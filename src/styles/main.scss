@@ -1,5 +1,9 @@
+@use 'variaveis';
 @use 'hero';
 @use 'about';
+@use 'plot';
+@use 'trailer';
+@use 'footer';
 
 @font-face {
     font-family: Avenir;
@@ -13,10 +17,6 @@
     font-weight: 700;
 }
 
-$bgColor:#121313;
-$textColor1: silver;
-$textColor2: #f9f9f9;
-
 *{
     margin: 0;
     padding: 0;
@@ -24,21 +24,22 @@ $textColor2: #f9f9f9;
 }
 
 body{
-    background-color: $bgColor;
+    background-color: variaveis.$bgColor;
     font-family: Avenir, sans-serif;
 }
 
 @mixin text($fontSize:16px){
     font-size: $fontSize;
     line-height: $fontSize + 10px;
-    color:$textColor1;
+    color:variaveis.$textColor1;
 }
 
-@mixin title($fontSize: 40px){
+@mixin title($fontSize: 36px){
     @include text($fontSize);
-    color: $textColor2;
+    color: variaveis.$textColor2;
     font-family: "Roboto Mono", monospace;
-    font-weight: 400
+    font-weight: 400;
+    margin-bottom: 16px;
 }
 
 .text-1{
@@ -50,7 +51,7 @@ body{
 }
 
 .text-3{
-    @include text(12px);
+    @include text(14px);
 }
 
 .title-1{
@@ -67,5 +68,5 @@ body{
 
 .link-text{
     @include text(18px);
-    color: $textColor2;
+    color: variaveis.$textColor2;
 }

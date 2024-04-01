@@ -1,0 +1,18 @@
+@use 'variaveis';
+.footer{
+    background-color:variaveis.$navColor;
+    text-align: center;
+    padding: 16px 0 ;
+    &__links{
+        padding-top:8px;
+        li{
+            display: inline;
+            
+            img{
+                width: 32px;
+            }
+
+        }
+    }
+
+}

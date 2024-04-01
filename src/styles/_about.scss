@@ -1,15 +1,101 @@
+@use 'variaveis';
+
+
 .about{
-    width: 700px;
+    width: 760px;
     margin: 0 auto;
+
+    &__container{
+        display: none;
+        &--is-active{
+            display: block;
+        }
+    }
+
     &__content{
+        margin: 32px 0;
         display: flex;
+        
+        img{
+            width: 60%;
+            height: 60%;
+            margin-left: 16px;
+            border-radius: 8px;
+
+        }
+    }
+
+    &__cast{
+        margin: 16px 0;
+        padding-top: 16px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+
+        &__items{
+            padding-bottom: 8px;
+            img{
+                max-width: 100%;
+                border-radius: 8px;
+            }
+        }
+    }
+
+    &__info{
+
+        margin: 32px 0;
+        color: variaveis.$textColor1;
+        &__list{
+            display: flex;
+            justify-content: center;
+            list-style-type:none;
+            border: 1px solid variaveis.$textColor1;
+            li{
+                margin: 16px;
+            }
+        }
+        
+        &__content{
+            margin: 32px 0px;
+            display: flex;
+            justify-content: center;
+            li{
+                margin: 16px;
+            }
+            img{
+                width: 40%;
+                height: 40%;
+                margin-right: 16px;
+                border-radius: 8px;
+    
+            }
+        }
+
 
     }
     
-    &__image{
-        width: 60%;
-        height: 60%;
-        margin-left: 16px;
+    &__tabs{
+        text-align: center;
+        &__button{
+            color: variaveis.$textColor1;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            background: none;
+            text-transform: uppercase;
+            margin: 0 1vw;
+            border-bottom: 2px solid tra;
+            &--is-active{
+                border-bottom: 2px solid variaveis.$textColor1;
+            }
+            &:hover{
+                color: variaveis.$textColor2;
+                transform: scale(1.05);
+                font-weight: 700;
 
+            }
+
+        }
     }
+    
 }

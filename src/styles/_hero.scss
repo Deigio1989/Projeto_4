@@ -1,9 +1,9 @@
 .hero{
-    padding: 7vw;
+    padding: 5vw;
     background-image: url(../images/Stalker/stalker5.png );
-    min-height: 86vh;
+    background-repeat: no-repeat;
+    min-height: 80vh;
     text-align: center;
-    background-size: cover;
     &__content{
         &__prize{
             width: 100px;

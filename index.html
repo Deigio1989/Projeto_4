@@ -11,31 +11,133 @@
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-    <section class="hero">
-        <div class="hero__content">
-            <h1 class="title-1">
-                S T A L K E R
-            </h1>
-            <h3 class="title-3">
-                um filme de Andrei Tarkovsky
-            </h3>
-            <img class="hero__content__prize" src="./dist/images/Stalker/cannes.png" alt="">
-        </div>
-    </section>
-    <section class="about">
-        <div >
-            <h2 class="title-2">
-                Sobre
-            </h2>
-            <div class="about__content">
-                <p class="text-1">Stalker (cirílico: Сталкер) é um filme teuto-soviético de 1979 dirigido por Andrei Tarkovsky, vencedor do prémio especial do Júri do Festival de Cannes de 1980.
-                    Foi gravado, em sua maior parte, na Estônia, então integrante da União Soviética. Stalker é um termo inglês que significa "o espreitador". 
-                </p>
-                <img class="about__image" src="./dist/images/Stalker/stalker1.jpg" alt="">
+    <header>
+
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <h1 class="title-1">
+                    S T A L K E R
+                </h1>
+                <h3 class="title-3">
+                    um filme de Andrei Tarkovsky
+                </h3>
+                <img class="hero__content__prize" src="./dist/images/Stalker/cannes.png" alt="">
+            </div>
+        </section>
+        <section class="about">
+            <nav class="about__tabs">
+                <button data-tab-button="sobre" class="about__tabs__button about__tabs__button--is-active">
+                    S o b r e
+                </button>
+                <button data-tab-button="elenco" class="about__tabs__button">
+                    E l e n c o
+                </button>
+                <button data-tab-button="ficha" class="about__tabs__button">
+                    F i c h a
+                </button>
+                
+            </nav>
+            <div data-tab-id="sobre" class="about__container about__container--is-active">
+                <div class="about__content">
+                    <p class="text-1">Stalker (cirílico: Сталкер) é um filme teuto-soviético de 1979 dirigido por Andrei Tarkovsky, vencedor do prémio especial do Júri do Festival de Cannes de 1980.
+                        Foi gravado, em sua maior parte, na Estônia, então integrante da União Soviética. Stalker é um termo inglês que significa "o espreitador". 
+                    </p>
+                    <img src="./dist/images/Stalker/stalker1.jpg" alt="Cena do filme Stalker">
+                </div>
+                
+            </div>
+            <div data-tab-id="elenco" class="about__container">
+                <ul class="about__cast" >
+                    <li class="about__cast__items">
+                        <img src="./dist/images/Stalker/Elenco/Alexander_Kaidanovsky.jpg" alt="Alexander Kaidanovsky">
+                    <h3 class="title-3">Alexander Kaidanovsky</i></h3>
+                    <h3 class="text-1">como " Stalker "</h3>
+                    </li>
+                    <li class="about__cast__items">
+                        <img src="./dist/images/Stalker/Elenco/Anatoliy_Solonitsyn.jpg" alt="Anatoliy Solonitsyn">
+                        <h3 class="title-3">Anatoliy Solonitsyn</i></h3>
+                        <h3 class="text-1">como " o Escritor "</h3>
+                    </li>
+                    <li class="about__cast__items">
+                        <img src="./dist/images/Stalker/Elenco/Nikolai_Grinko.jpg" alt="Nikolai Grnko">
+                        <h3 class="title-3">Nikolai Grinko</i></h3>
+                        <h3 class="text-1">como " o Professor "</h3>
+                        
+                    </li>
+                </ul>
+            </div>
+            <div data-tab-id="ficha" class="about__container">
+                <div class="about__info">
+                    <div class="about__info__content">
+                        <img src="./dist/images/Stalker/Stalker_(filme).jpg" alt="Poster filme Stalker">
+                        <ul>
+                            <li>Género : ficção científica, drama</li>
+                            <li>Direção : Andrei Tarkovsky</li>
+                            <li>Produção : Aleksandra Demidova</li>
+                            <li>Música : Eduard Artemev</li>
+                            <li>Roteiro : Arcady Strugatsky, <br> Boris Strugatsky</li>
+                            <li>Elenco : Alexander Kaidanovsky, <br>
+                            Anatoli Solonitsyn, <br>
+                            Nikolai Grinko, <br>
+                            Alisa Freyndlikh, <br>
+                            Natalya Abramova, <br>
+                            Faime Jurno
+                            </li>
+                        </ul> 
+                    </div>
+                    <ul class="about__info__list">
+                        <li>•  União Soviética, Alemanha Ocidental</li>
+                        <li>•  1979</li>
+                        <li>•  cor-pb</li>
+                        <li>•  163 min</li>
+                    </ul> 
+                </div>
+                
             </div>
             
-        </div>
+        </section>
+        <section class="plot">
+            <hr>
+            <h3 class="title-2">S I N O P S E </h3>
+            <div class="plot__content text-1">
+                <p>O "Stalker" (Alexander Kaidanovsky) trabalha em alguma área pouco clara em um futuro indefinido como um guia que leva as pessoas através da "Zona", uma vizinhança em que as leis normais da realidade já não se aplicam plenamente.</p>
+                <br>
+                <p>A Zona contém um lugar chamado "Quarto", que dizem conceder os desejos de qualquer um que entrar. A área que contém a Zona está envolta em segredo, isolada pelo governo e cercada de grandes perigos.</p>
+                <br>
+                <img src="dist/images/Stalker/1.jpg" alt="Cena do filme Stalker">
+                <br>
+                <p>Em casa, com sua esposa e filha, a esposa do Stalker (Alisa Freindlich) implora para que ele não entre na Zona, mas ele ignora suas súplicas. Em um bar, o Stalker encontra seus próximos clientes para uma viagem para a Zona. Seus nomes não são divulgados, e todos se referem uns aos outros pelos nomes de suas profissões. O "Escritor" (Anatoly Solonitsyn) e o "Professor" (Nikolai Grinko) concordam em colocar seus destinos nas mãos do Stalker.
+                </p>
+                
+            </div>       
+        </section>
+        <section class="trailer">
+            <hr>
+            <h3 class="title-2">T R A I L E R </h3>
+            <iframe width="700" src="https://www.youtube.com/embed/mIfWXqeOrJ4" title="Stalker (Modern Trailer)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+    </main>
+    <footer class="footer"> 
+        <ul class="footer__links">
+            <li>
+                <a href="https://www.linkedin.com/in/diego-sanchez-1848b6278/">
+                    <img src="dist/images/icones/linkedin .svg" alt="linkedin">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/Deigio1989">
+                    <img src="dist/images/icones/github.svg" alt="github">
+                </a>
+            </li>
+        </ul>      
+        <p class="text-3">Criado por Diego Sanchez - 2024 <br>
+            Este site foi realizado apenas para fins de estudo.</p> 
         
-    </section>
+    </footer>
+
+
+    <script src="./src/main.js"></script>
 </body>
 </html>
