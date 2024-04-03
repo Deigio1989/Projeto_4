@@ -1,0 +1,57 @@
+@use 'variaveis';
+
+.header{     
+    &__container{
+            height: 0;
+            display: flex;
+            justify-content: right;
+            &__button{
+                position: fixed;
+                    margin-top: 16px;
+                    margin-right: 24px;
+                    color: variaveis.$textColor2;        
+                    text-decoration: none;   
+                    background-color: transparent;
+                    border: 1px solid variaveis.$textColor2;
+                    padding: 8px;
+                    border-radius: 4px;
+                    height:40px;
+                    &:hover{
+                        border: 2px solid variaveis.$textColor2;
+                        font-weight: 500;
+
+                    }
+            }
+
+    }
+            
+}
+@media (max-width:767px) {
+    .header{     
+        height: 72px;
+        &__container{              
+                display: flex;
+                justify-content: center;
+                &__button{
+                        position: static;
+                        margin-top: 16px;
+                        margin-right: 24px;
+                        color: variaveis.$textColor2;        
+                        text-decoration: none;   
+                        background-color: transparent;
+                        border: 1px solid variaveis.$textColor2;
+                        padding: 8px;
+                        border-radius: 4px;
+                        height:40px;
+                        &:hover{
+                            border: 2px solid variaveis.$textColor2;
+                            font-weight: 500;
+    
+                        }
+                }
+    
+        }
+                
+    }
+
+}

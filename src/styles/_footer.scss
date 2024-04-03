@@ -16,3 +16,18 @@
     }
 
 }
+
+.language{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    img{
+        height: 24px;
+        margin:0 8px;
+    }
+    &__selector{
+        font-weight: 700;
+        padding:4px;
+    }
+}
